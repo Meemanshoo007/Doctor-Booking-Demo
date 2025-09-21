@@ -1,10 +1,18 @@
 import './doctors-page.css';
-import { useState } from "react";
-
+import { useState,useEffect } from "react";
 import DoctorData  from "../../components/data/doctor-data";
 
 import { Link } from "react-router-dom";
 const DoctorPage = () => {
+
+
+
+
+  
+  
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to top on page load
+    }, []);
 
 
     const [searchTerm, setSearchTerm] = useState("");

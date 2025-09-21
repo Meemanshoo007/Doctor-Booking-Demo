@@ -1,6 +1,6 @@
 
 import Carousel from 'react-bootstrap/Carousel';
-
+import { Link } from "react-router-dom";
 import './carousel.css'; // Import the CSS file
 
 function WidgetCarousel() {
@@ -63,23 +63,37 @@ function WidgetCarousel() {
         {/* This is the new widget section */}
     
 <div className="call-to-action-bar ">
-        <div className="cta-item">
+  <Link  
+ class="no-link"
+                      href="#"
+                      to={`book-now?id=0`}
+  >
+    <div className="cta-item">
           <img
           className=""
           src="https://www.sakraworldhospital.com/assets/images/book-appointment-ico.svg"
           alt="Third slide"
         /> 
-          <span>Book an Appointment</span>
+          <span className='.no-link'>Book an Appointment</span>
         </div>
+
+  </Link>
+    
            <div className="cta-divider"></div>
-        <div className="cta-item">
+
+             <Link  
+ class="no-link"
+                      href="#"
+                      to={`doctor-page`}
+  >  <div className="cta-item">
          <img
           className=""
           src="https://www.sakraworldhospital.com/assets/images/doctor-dropdown.svg"
           alt="Third slide"
         />
           <span>Find a Doctor</span>
-        </div>   <div className="cta-divider"></div>
+        </div> </Link>
+        <div className="cta-divider"></div>
         <div className="cta-item">
         <img
           className=""

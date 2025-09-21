@@ -8,6 +8,21 @@ import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 const BookingPage = () => {
+
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
+
+
+
+
+
+
+
+
+
   const [startDate, setStartDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
 
@@ -21,6 +36,11 @@ const BookingPage = () => {
  const navigate = useNavigate();
   const [mobile, setMobile] = useState("");
   const handleChange = (e) => {
+
+
+
+
+
     const value = e.target.value.replace(/\D/g, ""); // remove non-digits
     setMobile(value);
   };

@@ -120,4 +120,24 @@
    margin-bottom: 10px;
   margin-top: 10px;
 }
+
+
+.mycarausel-style .carousel-indicators {
+  bottom: 0px; /* Adjust this value for the desired spacing from the bottom */
+
 }
+
+.mycarausel-style{
+  height: 400px;
+
+}
+.mycarausel-style img{
+  height: 400px;
+  object-fit: cover; 
+  
+}
+}
+
+
+
+

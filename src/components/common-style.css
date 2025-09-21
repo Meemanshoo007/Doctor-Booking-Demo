@@ -11,6 +11,9 @@ body{
 
 }
 
+.no-link{
+    text-decoration: none !important;
+}
 .mb-2{
     margin-bottom: 120px;
 }
@@ -94,7 +97,6 @@ body{
 
  .splide__pagination li button {
  
-    background: #fff; 
     width: 12px;
     height: 12px;
     border-radius: 50%;
