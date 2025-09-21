@@ -1,0 +1,32 @@
+
+.excellence {
+    background: url(https://www.sakraworldhospital.com/assets/images/excellance-bg.webp) no-repeat center;
+    background-size: cover
+}
+
+.excellance-txt {
+    width: 50%;
+    background: #ffffff68;
+    padding: 20px 20px 20px 80px
+}
+
+.excellance-txt h2 {
+    font-size: 44px;
+    line-height: 50px;
+    color: #0c356a;
+    font-weight: 600
+}
+
+.excellance-txt p {
+    font-size: 16px;
+    line-height: 28px
+}
+
+@media (max-width: 1199px) {
+    
+.excellance-txt {
+   
+    width: 100%;
+    padding: 20px 20px 20px 20px
+}
+}

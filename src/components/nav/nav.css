@@ -1,0 +1,81 @@
+
+.navbar {
+
+  --bs-navbar-padding-x: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background: #7e3a74;
+  background: linear-gradient(
+    131deg,
+    rgba(126, 58, 116, 1) 0,
+    rgba(57, 59, 121, 1) 100%
+  );
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #d1c4e9;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 15px;
+}
+
+.language-selector select {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.language-selector option {
+  color: black;
+}
+
+.hamburger-menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+  
+.navbar {
+  display: none !important;
+}
+}

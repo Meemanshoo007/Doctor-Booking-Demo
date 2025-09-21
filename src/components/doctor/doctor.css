@@ -1,0 +1,113 @@
+
+
+.our-doctor-box {
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* This creates the square aspect ratio */
+  position: relative; /* This is crucial for absolute positioning the image */
+  border: 5px solid #0c356a;
+  border-radius: 64px;
+  overflow: hidden;
+}
+
+.our-doctor-box img {
+   position: absolute; /* Take the image out of the normal document flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.our-doctor-name {
+    text-align: center
+}
+
+.doctor-splide .splide__slide a.book-button {
+ 
+    display: inline-block;
+    background: #393b79;
+    padding: 8px 25px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%
+}
+
+
+
+
+
+.dco-div {
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.our-doctor-name h3 {
+    font-size: 16px;
+    color: #0c356a;
+    margin: 20px 0 0 0;
+    font-weight: 600;
+    height: 40px;
+    overflow-y: auto
+}
+
+.our-doctor-name p {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #7e3a74;
+   font-weight: 500;
+    line-height: 21px;
+    height: 50px;
+    overflow-y: auto;
+    margin-bottom: 0px;
+}
+
+.our-doctor-name h3::-webkit-scrollbar,.our-doctor-name p::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+}
+
+.our-doctor-name h3::-webkit-scrollbar-track,.our-doctor-name p::-webkit-scrollbar-track {
+    width: 5px;
+    height: 15px;
+    background: #d2e8f5;
+    border-radius: 10px
+}
+
+.our-doctor-name h3::-webkit-scrollbar-thumb,.our-doctor-name p::-webkit-scrollbar-thumb {
+    background: #0c356a;
+    border-radius: 10px
+}
+
+.our-doctors .splide__pagination::-webkit-scrollbar {
+    display: none
+}
+
+.book-button{
+    display: inline-block;
+    background: #393b79;
+    padding: 8px 25px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    text-decoration: none;
+    font-size: 14px;
+}

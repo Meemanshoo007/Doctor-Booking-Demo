@@ -1,0 +1,169 @@
+
+
+
+
+/* General Layout */
+
+
+
+
+
+.main-sub-title {
+    font-size: 18px;font-weight: 500;
+    color: #242329;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* Splide Slider Customization */
+.about-slider .splide__track {
+ 
+    padding: 0px 0; /* Adjust vertical padding for the slides */
+}
+
+.home-about-text {
+    display: flex;
+    gap: 30px; /* Space between image and text columns */
+    align-items: center;
+    /* background-color: #fff;  */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+    overflow: hidden;
+}
+
+.home-about-text .d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 0; /* Gap already defined by parent flex */
+    width: 100%;
+}
+
+.home-about-text .col {
+    padding: 30px; /* Padding inside columns */
+}
+
+.home-about-text .col:first-child {
+    position: relative;
+    padding: 0; /* Image column takes full space */
+}
+
+.home-about-text .col:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Play Icon Overlay */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Size of the play icon circle */
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 50%;
+    z-index: 5;
+    transition: background-color 0.3s ease;
+}
+
+.play-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.play-icon svg {
+    width: 30px; /* Size of the play arrow */
+    height: 30px;
+}
+
+/* Text Content Styling */
+.home-about-text .col h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a237e; /* Dark blue heading */
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.home-about-text .col p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-about-text .col a.gg-arrow-right {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff; /* Blue for "Read More" link */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.home-about-text .col a.gg-arrow-right span {
+    margin-right: 5px;
+}
+
+
+
+/* Basic Scroll Animations (Placeholder - actual JS needed for dynamic class application) */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
+.js-scroll.slide-left {
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.js-scroll.slide-right {
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.js-scroll.slide-left.scrolled,
+.js-scroll.slide-right.scrolled {
+    transform: translateX(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-about-text .d-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .home-about-text .col:first-child img {
+        border-radius: 8px 8px 0 0; /* Adjust border-radius for stacking */
+    }
+
+    .home-about-text .col {
+        padding: 20px;
+    }
+
+    .about-slider .splide__arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-slider .splide__arrow--prev {
+        left: 5px;
+    }
+
+    .about-slider .splide__arrow--next {
+        right: 5px;
+    }
+
+    .about-slider .splide__pagination {
+        justify-content: center; /* Center dots on smaller screens */
+    }
+}

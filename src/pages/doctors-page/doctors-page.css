@@ -1,0 +1,20 @@
+/* Grid for doctors */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 in a row */
+column-gap: 30px;  /* horizontal gap */
+  row-gap: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}

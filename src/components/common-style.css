@@ -1,0 +1,124 @@
+.bg{
+    background-color: red;
+}
+
+body{
+  padding-top: 135px;
+}
+
+.container{
+           max-width: 90% !important; /* You can use a percentage, pixels, or other units */
+
+}
+
+.mb-2{
+    margin-bottom: 120px;
+}
+.section-padding {
+    padding: 50px 0;
+}
+.our-center{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.del{
+    display: none;
+}
+
+
+.mylink{
+    text-decoration: none;
+ 
+    /* padding-left: 30px; */
+    color: #3da988;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+   
+    transition: all .3s ease-in-out;
+}
+
+.gradient-card{
+ 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(254, 241, 236, 1) 100%);
+}
+
+.view-all {
+    text-align: center;
+}
+
+
+.view-all a {
+  text-decoration: none;
+    display: inline-flex;
+    border: 2px solid #0c356a;
+    padding: 6px 22px;
+    border-radius: 50px;
+    color: #0c356a;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s ease-in-out
+}
+
+
+.view-all a:hover {
+    color: #fff;
+    background: #0c356a;
+    border-color: #0c356a;
+    box-shadow: rgba(0,0,0,.24) 0 3px 8px
+}
+
+.view-all a span {
+    margin-left: 5px;
+    transition: all .6s ease-in-out
+}
+
+.view-all a:hover span {
+    margin-left: 15px
+}
+
+.splide__arrow {
+    display: none;
+}
+
+.splide__pagination {
+ position: static;  
+ margin: 40px 0 40px 0;
+
+}
+
+
+
+ .splide__pagination li button {
+ 
+    background: #fff; 
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+    border: 1px solid #ccc;
+    opacity: 0.7;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.splide__pagination li button.is-active {
+    background: #1a237e; /* Active dot color */
+
+    opacity: 1;
+      width: 10px;
+    height: 10px;
+}
+
+
+@media (max-width: 1050px) {
+
+    
+.container{
+           max-width: 99% !important; /* You can use a percentage, pixels, or other units */
+
+}
+
+}

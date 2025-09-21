@@ -1,0 +1,42 @@
+
+
+
+
+.gradient-background{
+ 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(254, 241, 236, 1) 100%);
+}
+
+.white-background{
+  background: white;
+}
+
+.our-center-box img {
+  width: 100%;
+  height: auto;border-radius: 3px;
+  display: block;
+}
+
+.center-name {
+      transform: translateY(-50%);
+      background-color: white; 
+      margin: 0px 15px 0 15px;
+         border: 1px solid #e6f1f8;
+    border-radius: 5px;
+ 
+  padding: 20px;
+  text-align: center;
+}
+
+.center-name h4 {
+     font-size: 18px;
+    font-weight: 600;
+    color: #0c356a;
+    text-align: center;
+    text-transform: uppercase;
+  margin: 0;
+     white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}

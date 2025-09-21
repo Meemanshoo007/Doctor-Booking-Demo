@@ -1,0 +1,397 @@
+/* Note: You should have Bootstrap 5 included in your project */
+
+.spinner-border{
+    color: #f37b89;
+}
+
+/* Doctor profile card styling */
+.mhc-doctor-profile-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.mhc-doctor-profile-card .img-holder {
+    width: 80px;
+  
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.mhc-doctor-profile-card .img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-title {
+    font-size: 1.25rem;
+    color: #0c356a;
+}
+
+.sub-text {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Accordion and tabs styling */
+.mhc-profile-tabs .accordion-button {
+    background-color: #f7f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0c356a;
+    background-color: #fafafa !important;
+}
+
+.form-check-input:checked {
+    background-color: #0c356a;
+    border-color: #0c356a;
+}
+
+
+
+.mhc-slot-avability .mhc-text{
+font-size: 12px;
+font-weight: bold;
+padding: 0 0 0 5px;
+}
+/* Slot availability indicators */
+.mhc-slot-avability .mhc-bg {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.mhc-slot-avability .Available { background-color: #b6e1cd; }
+.mhc-slot-avability .Booked { background-color: #ccc; }
+.mhc-slot-avability .Selected { background-color: #f37b89; }
+
+.list-login-width {
+    max-width: 400px;
+}
+
+/* Adjustments for the mobile number input */
+.border-rasius-login {
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+
+
+
+.react-datepicker__day--selected {
+    background-color: #0c356a;
+    color: white;
+    border-radius: 50%;
+}
+
+.react-datepicker__day--weekend {
+    color: #dc3545;
+}
+
+.react-datepicker__day--disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.min-body-height {
+    min-height: 80vh;
+}
+
+.default-container-width {
+    max-width: 1200px;
+}
+
+.btn-width {
+    min-width: 120px;
+}
+
+.mhc-calendar{
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+
+
+.react-datepicker {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #e0e0e0;  border: 0px solid !important;
+      width: 100% !important;
+    border-radius: 8px;
+}
+
+
+.react-datepicker__header {
+    
+
+    width: 100% !important;
+    background-color:transparent !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #e0e0e0;
+   
+   
+}
+.react-datepicker__month {
+    margin: 0 !important;
+  width: 100% !important;
+}
+
+.react-datepicker__current-month{
+ color: #0c356a !important;
+
+    font-size: 14px !important;
+}
+.react-datepicker__month-container {
+    padding-top: 0px;  width: 100% !important;
+}
+
+
+
+.react-datepicker__day--selected, .react-datepicker__day--selected:hover {
+    background-color: #f37b89 !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+
+
+.react-datepicker__day--keyboard-selected {
+  background-color: transparent !important;
+}
+.react-datepicker__day-names{ 
+     margin-bottom: 1px !important;
+ display: flex !important;
+
+  justify-content: space-between;
+  width: 100% !important;
+
+}
+.react-datepicker__day-name {
+flex: 1;              /* equal width */
+  text-align: center;   /* center text */
+  height: 2.2rem;    font-size: 11px !important;
+  font-weight: bold;
+  margin: 0px 1px 0 0 !important;
+  line-height: 2.2rem;
+  background: #f1f1f1; 
+}
+
+ .react-datepicker__day { 
+    background-color: #b6e1cd;
+flex: 1;              /* equal width */
+  text-align: center !important;   /* center text */
+  height: 2.2rem;
+justify-content: center !important;
+
+             margin:1px !important;                 
+  align-items: center !important;   
+   
+  display: flex !important;
+  box-sizing: border-box;
+ }
+
+ 
+.react-datepicker__day--today {
+    
+    background-color: #b6e1cd !important;   color: black !important;
+    font-weight: normal !important;
+}
+
+.react-datepicker__day--today:hover{
+       background-color:   #f6f6f6 !important;
+}   
+
+.react-datepicker__day--today.react-datepicker__day--selected{
+      background-color: #f37b89 !important;
+    color: white !important;
+
+}
+.react-datepicker__day--today.react-datepicker__day--selected:hover{
+      background-color: #f37b89 !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+ .react-datepicker__week {
+    /* background-color: #f6f6f6 !important; */
+    display: flex !important;
+  justify-content: space-between;
+
+  width: 100% !important;
+}
+
+.react-datepicker__day--weekend {
+    color: #dc3545;
+}
+
+ .react-datepicker__day--disabled  {
+      background-color:   #f6f6f6 !important;
+    
+ }
+
+.react-datepicker__day--disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    
+}
+
+
+
+
+
+
+
+#timeSlots li {
+    position: relative
+}
+
+#timeSlots li .time-slot-btn {
+    border: 1px solid #ced4da;
+    border-radius: 50px!important;
+    margin-bottom: 10px;
+    margin-right: 4px;
+    min-width: 98px
+}
+
+#timeSlots li .time-slot-btn:focus,#timeSlots li .time-slot-btn:hover {
+    background: #f37b89;
+    border-color: #f37b89;
+    color: #fff !important
+}
+
+.selectedBtn{
+     background: #f37b89 !important;
+    border-color: #f37b89 !important;
+    color: #fff !important
+}
+
+#timeSlots li .time-slot-btn.selected {
+    background: #e6e6e6!important;
+    border-color: #e6e6e6!important;
+    cursor: not-allowed
+}
+
+#timeSlots li .time-slot-btn.selected:hover {
+    color: #0c356a !important
+}
+
+#timeSlots li .time-slot-btn.active {
+    background: #f37b89!important;
+    border-color: #f37b89!important;
+    color: #fff!important
+}
+
+#timeSlots li .time-slot-btn:disabled {
+    background: #eee8eb;
+    border-color: #cdbdc5;
+    color: #000;
+    cursor: not-allowed
+}
+
+#timeSlots li .time-slot-btn:disabled.NotAvailableSlot:before {
+    display: none
+}
+
+#timeSlots li .time-slot-btn.NotAvailableSlot {
+    cursor: not-allowed
+}
+
+#timeSlots li .time-slot-btn.NotAvailableSlot:hover {
+    background: #fff!important;
+    border: 1px solid #c7c7c7;
+    color: #5c5c5c!important
+}
+
+#timeSlots li .time-slot-btn.NotAvailableSlot:before {
+    background: #636a77;
+    content: "";
+    display: block;
+    height: .08rem;
+    position: relative;
+    rotate: -18deg;
+    top: 10px;
+    width: 100%
+}
+
+#timeSlots li .toolTips {
+    background: #f37b89;
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    font-size: .9rem;
+    padding: 5px 10px;
+    top: 0;
+    top: -37px;
+    white-space: nowrap;
+    width: auto;
+    z-index: 1
+}
+
+#timeSlots li .toolTips,#timeSlots li .toolTips:after {
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#timeSlots li .toolTips:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #f37b89;
+    bottom: -6px;
+    content: "";
+    display: inline-block
+}
+
+#timeSlots li .time-slot-btn:hover+.toolTips {
+    display: block
+}
+
+.acc-text-color{
+    color: #f37b89 !important;
+    font-weight: bold;
+}
+
+
+.form-check-input:checked{
+
+    background-color: #f37b89 !important;
+    border: 0;
+}
+ 
+.small-input {
+  height: 1px !important;              /* Set your desired height */
+  padding: 0px 10px 0 10px !important;   /* Adjust padding to fit label */
+  font-size: 10px;         /* Optional: smaller text */
+}
+.small-input .form-control{
+    background-color: red !important;
+    height: 10px !important;
+}
+
+.my-form-control{
+             /* sets input height */
+  padding: 0 8px;         /* optional: left/right padding */
+    /* optional: smaller font */
+  box-sizing: border-box;
+  
+    height: 37px !important;
+   
+      display: block;
+      font-size: 13px;
+      line-height: 20;
+ 
+}
+
+.btn-outline-primary{
+    
+    color: #f37b89 !important;
+    border: 1px solid #f37b89 !important;
+}
+.btn-outline-primary:hover{
+    
+    background-color: #f37b89 !important; color: white !important;
+    border: 1px solid #f37b89 !important;
+}

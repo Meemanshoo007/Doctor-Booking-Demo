@@ -1,0 +1,85 @@
+
+.patient-testi-img {
+    position: relative
+}
+
+.patient-testi-img img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    object-fit: cover;
+    display: block
+}
+
+.patient-testi-txt h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0c356a;
+    font-weight: 600
+}
+
+.patient-testi-txt {
+    position: relative
+}
+
+.patient-testi-txt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 16px;
+    color: #242329;
+    line-height: 30px
+}
+
+.patient-testi-txt a {
+    color: #3da988;
+    display: flex;
+    align-items: center
+}
+
+.patient-testi-txt a span {
+    height: 21px;
+    margin-left: 5px;
+    transition: all .3s ease-in-out
+}
+
+.patient-testi-txt a:hover span {
+    margin-left: 10px
+}
+
+.patient-testi-txt a .gg-play-button-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 4px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid;
+    top: 0;
+    left: 4px
+}
+
+.patient-testi-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.patient-testi-date p {
+    color: #414b587a
+}
+
+.tesimonial-link{
+     text-decoration: none;
+ 
+    color: #3da988;
+}
+
+

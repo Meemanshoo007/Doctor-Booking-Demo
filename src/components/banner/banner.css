@@ -1,0 +1,36 @@
+
+.multi-spec-service {
+    background: url(https://www.sakraworldhospital.com/assets/images/multy-speciality-services.webp) no-repeat center;
+    background-size: cover;
+    padding: 40px 0
+}
+
+.multi-spec-service .d-grid {
+    grid-template-columns: 45% 55%
+}
+
+.multi-spec-service .d-grid .col h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0c356a;
+    margin: 0
+}
+
+.multi-spec-service .d-grid .col h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #7e3a74;
+    line-height: 50px;
+    margin: 0 0 40px 0
+}
+
+.multi-spec-service .d-grid .col p {
+    font-size: 18px;
+    color: #242329
+}
+
+@media (max-width: 800px) {
+    .multi-spec-service .d-grid {
+    grid-template-columns: 100% 0%
+}
+}

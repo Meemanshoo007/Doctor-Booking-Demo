@@ -1,0 +1,45 @@
+.success-alert {
+  /* Positioning properties to fix it to the bottom-right */
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Use 'right' to place it on the opposite side of the error alert */
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  background-color: #e8f5e9; /* Light green background */
+  border: 1px solid #4caf50; /* Green border */
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #2e7d32; /* Darker green text color */
+}
+
+.success-alert .icon-container {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.success-alert .alert-icon {
+  width: 28px;
+  height: 28px;
+  color: #43a047; /* Icon color */
+}
+
+.success-alert .content-container {
+  flex-grow: 1;
+}
+
+.success-alert .alert-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.success-alert .alert-message {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

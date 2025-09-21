@@ -1,0 +1,123 @@
+/* Fixed buttons on the right */
+.fixed-buttons {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Adjust this value to set the distance from the right edge */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+}
+
+
+.fixed-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4c5d7;
+  /* color: white; */
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* transition: background-color 0.3s ease; */
+}
+
+.fixed-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* All of your existing CSS for fixed buttons goes here */
+/* ... */
+
+/* Call to Action Bar */
+.call-to-action-bar {
+  display: flex;
+  justify-content: space-around;
+
+  background: #fff;
+  border: 1px solid #0174be45;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+
+  align-items: center;
+
+  padding: 25px 0 25px 0;
+  margin: -50px 45px 0 45px;
+  position: relative;
+  z-index: 4;
+}
+
+.cta-item {
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cta-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ddd; /* A light grey color */
+  /* Adds spacing above and below the divider */
+}
+
+.cta-item span {
+  font-size: 16px;
+  margin: 0 0 0 10px;
+  color: #0c356a;
+  font-weight: 500;
+}
+
+.mycarausel-style .carousel-indicators {
+  bottom: 50px; /* Adjust this value for the desired spacing from the bottom */
+
+  display: absolute;
+  justify-content: center;
+}
+
+/* Optional: You may also want to adjust their size and background color to make them more visible */
+.mycarausel-style .carousel-indicators [data-bs-target].active {
+  background-color: #0c356a;
+  border-color: #0c356a;
+}
+
+.mycarausel-style .carousel-indicators [data-bs-target] {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #fff0ce80;
+  border: 1px solid #0c356a4d;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .fixed-buttons {
+    display: none;
+  }
+  .call-to-action-bar {
+    /* Change the layout to a column */
+    flex-direction: column;
+    /* Remove horizontal margins to fit on small screens */
+    margin: 0px;
+    padding: 20px; /* Adjust padding for better spacing */
+  }
+  
+.cta-divider {
+  display: none;
+}
+
+
+.cta-item 
+{
+   margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
