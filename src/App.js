@@ -16,6 +16,7 @@ import Testimonial from './components/testimonial/testimonial.js';
 import AdvanceTechnology from './components/advance-technology/advance-technology.js';
 import Advantage from './components/advantage/advantage.js';
 import BookingPage from '../src/pages/booking/booking.js';
+import DoctorDisplayAds1 from './components/ads/doctor-display-ads1 .js';
 
 import DoctorPage from '../src/pages/doctors-page/doctors-page.js';
 
@@ -25,6 +26,7 @@ const HomePage = () => (
   <>
      <Nav />
       <WidgetCarousel />
+          <DoctorDisplayAds1 />
       <HealthcareFeatures />
       <HospitalLanding />
       <Specialities title="Our Centres of Excellence" backColor="white-background"/>
