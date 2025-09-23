@@ -26,7 +26,6 @@ const HomePage = () => (
   <>
      <Nav />
       <WidgetCarousel />
-          <DoctorDisplayAds1 />
       <HealthcareFeatures />
       <HospitalLanding />
       <Specialities title="Our Centres of Excellence" backColor="white-background"/>
@@ -41,6 +40,8 @@ const HomePage = () => (
       <Testimonial title="Video Section" backColor="gradient-background"/>
       <Excellence />
       <Footer/>
+      
+          <DoctorDisplayAds1 />
   </>
 );
 
