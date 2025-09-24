@@ -20,6 +20,7 @@ import DoctorDisplayAds1 from './components/ads/doctor-display-ads1 .js';
 
 import DoctorPage from '../src/pages/doctors-page/doctors-page.js';
 
+
 import './components/common-style.css';
 
 const HomePage = () => (
